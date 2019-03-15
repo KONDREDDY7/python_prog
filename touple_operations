@@ -1,0 +1,25 @@
+Python 2.7 (r27:82525, Jul  4 2010, 09:01:59) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> """
+Touple--> touple is a collection of objects, which is unchangeble or immutable and ordered datatype.
+          immutable means you can't change the internal reference location of a object in touple.
+          touple elements separated by comma(,) and enclosed by parentheses ()
+          
+      --> Touple have following methods-->Count and Index          
+"""
+
+touple_objects = (1,2,3,4,'e','w','hello','bye')
+"\nTouple--> touple is a collection of objects, which is unchangeble or immutable and ordered datatype.\n          immutable means you can't change the internal reference location of a object in touple.\n          touple elements separated by comma(,) and enclosed by parentheses ()\n          \n      --> Touple have following methods-->Count and Index          \n"
+>>> touple_objects = (1,2,3,4,'e','w','hello','bye')
+>>> touple_objects
+(1, 2, 3, 4, 'e', 'w', 'hello', 'bye')
+>>> #Count--> it returns how many times a vallue repeated in touple
+>>> touple_objects.count('hello')
+1
+>>> #Index-->it specify index of a value in touple, if the given value occured multiple times in touple, then it returns the first first occured index of the value.
+>>> touple_objects1 = (1,2,3,2,3,4,5,'hi','hello','bye','hi')
+>>> touple_objects1.index('hi')
+7
+>>> touple_objects1.index(2)
+1
+>>> 
