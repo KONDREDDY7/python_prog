@@ -1,0 +1,70 @@
+Python 2.7 (r27:82525, Jul  4 2010, 09:01:59) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> """
+List: list is one of data structure in python, which is mutable, ordered and sequential data type.
+
+Mutability: objects in list can be change, when you change any objects in list, then the internal reference location of
+            that object will change, but the reference location of that list can't be change.
+Ordered data type: when you are going to declare a objects in list in a specified order, while retriving
+                   also get the objects of a list in the same order.
+--> List have the following methods--append, count, extend, index, insert, pop, remove, reverse, sort
+"""
+
+"\nList: list is one of data structure in python, which is mutable, ordered and sequential data type.\n\nMutability: objects in list can be change, when you change any objects in list, then the internal reference location of\n            that object will change, but the reference location of that list can't be change.\nOrdered data type: when you are going to declare a objects in list in a specified order, while retriving\n                   also get the objects of a list in the same order.\n--> List have the following methods--append, count, extend, index, insert, pop, remove, reverse, sort\n"
+>>> pip install pylint
+SyntaxError: invalid syntax
+>>> pip instal pylint
+SyntaxError: invalid syntax
+>>> pip install pylint
+SyntaxError: invalid syntax
+>>> list_objects = [1, 2, 'd', 'e', 3, 4, 5, 'q']
+>>> list_objects
+[1, 2, 'd', 'e', 3, 4, 5, 'q']
+>>> list_objects.
+SyntaxError: invalid syntax
+>>> # append-Add an objects at the end of the list
+>>> list_objects.append(2)
+>>> list_objects
+[1, 2, 'd', 'e', 3, 4, 5, 'q', 2]
+>>> # Insert-->it adds an objects at specified index location
+>>> list_objects.insert(3,'hi')
+>>> list_objects
+[1, 2, 'd', 'hi', 'e', 3, 4, 5, 'q', 2]
+>>> #difference between append and insert--> append will add an object at the end of the list and insert will add an object at specified index location
+>>> list_objects
+[1, 2, 'd', 'hi', 'e', 3, 4, 5, 'q', 2]
+>>> # remove-->it removes specified object value
+>>> list_objects.remove('hi')
+>>> list_objects
+[1, 2, 'd', 'e', 3, 4, 5, 'q', 2]
+>>> # pop-->it removes specified index, if you specifiy index otherwise it will removes last index of the list
+>>> list_objects
+[1, 2, 'd', 'e', 3, 4, 5, 'q', 2]
+>>> list_objects.pop()
+2
+>>> list_objects.pop(2)
+'d'
+>>> # Difference between remove and pop--> in remove method object can be removed based on object value, whereas in pop method object can be removed based on object index value, but if did't specify index it will remove last index value of list.
+>>> list_objects
+[1, 2, 'e', 3, 4, 5, 'q']
+>>> # count--> it define lenght of the list
+>>> num_obj_list = list_objects.count(4)
+>>> num_obj_list
+1
+>>> # Extend--> it adds the list of elements to the end of current list
+>>> list_objects.extend([9,4,8])
+>>> list_objects
+[1, 2, 'e', 3, 4, 5, 'q', 9, 4, 8]
+>>> #Index--> it is used to find index of element in a list.
+>>> list_objects.index(5)
+5
+>>> #Reverse--> it reverses the list order.
+>>> list_objects.reverse()
+>>> list_objects
+[8, 4, 9, 'q', 5, 4, 3, 'e', 2, 1]
+>>> #sort--> it sorts the list
+>>> list_objects.sort()
+>>> list_objects.sort()
+>>> list_objects
+[1, 2, 3, 4, 4, 5, 8, 9, 'e', 'q']
+>>> 
